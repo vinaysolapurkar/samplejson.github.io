@@ -1,0 +1,904 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "jane-smith",
+        "identifier": [
+          {
+            "system": "http://hospital.smarthealthit.org",
+            "value": "MRN12346"
+          }
+        ],
+        "name": [
+          {
+            "family": "Smith",
+            "given": [
+              "Jane"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-03-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-1",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        },
+        "period": {
+          "start": "2025-01-01T00:00:00Z",
+          "end": "2025-01-01T01:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-2",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        },
+        "period": {
+          "start": "2025-01-02T00:00:00Z",
+          "end": "2025-01-02T01:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-3",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        },
+        "period": {
+          "start": "2025-01-03T00:00:00Z",
+          "end": "2025-01-03T01:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-4",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        },
+        "period": {
+          "start": "2025-01-04T00:00:00Z",
+          "end": "2025-01-04T01:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-5",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        },
+        "period": {
+          "start": "2025-01-05T00:00:00Z",
+          "end": "2025-01-05T01:00:00Z"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-1",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "code": {
+          "text": "Condition 1"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "code": {
+          "text": "Condition 2"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-3",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "code": {
+          "text": "Condition 3"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1",
+        "status": "final",
+        "code": {
+          "text": "Observation 1"
+        },
+        "valueQuantity": {
+          "value": 101,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2",
+        "status": "final",
+        "code": {
+          "text": "Observation 2"
+        },
+        "valueQuantity": {
+          "value": 102,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-3",
+        "status": "final",
+        "code": {
+          "text": "Observation 3"
+        },
+        "valueQuantity": {
+          "value": 103,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-4",
+        "status": "final",
+        "code": {
+          "text": "Observation 4"
+        },
+        "valueQuantity": {
+          "value": 104,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-5",
+        "status": "final",
+        "code": {
+          "text": "Observation 5"
+        },
+        "valueQuantity": {
+          "value": 105,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-6",
+        "status": "final",
+        "code": {
+          "text": "Observation 6"
+        },
+        "valueQuantity": {
+          "value": 106,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-7",
+        "status": "final",
+        "code": {
+          "text": "Observation 7"
+        },
+        "valueQuantity": {
+          "value": 107,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-8",
+        "status": "final",
+        "code": {
+          "text": "Observation 8"
+        },
+        "valueQuantity": {
+          "value": 108,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-9",
+        "status": "final",
+        "code": {
+          "text": "Observation 9"
+        },
+        "valueQuantity": {
+          "value": 109,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-10",
+        "status": "final",
+        "code": {
+          "text": "Observation 10"
+        },
+        "valueQuantity": {
+          "value": 110,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-11",
+        "status": "final",
+        "code": {
+          "text": "Observation 11"
+        },
+        "valueQuantity": {
+          "value": 111,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-12",
+        "status": "final",
+        "code": {
+          "text": "Observation 12"
+        },
+        "valueQuantity": {
+          "value": 112,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-13",
+        "status": "final",
+        "code": {
+          "text": "Observation 13"
+        },
+        "valueQuantity": {
+          "value": 113,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-14",
+        "status": "final",
+        "code": {
+          "text": "Observation 14"
+        },
+        "valueQuantity": {
+          "value": 114,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-15",
+        "status": "final",
+        "code": {
+          "text": "Observation 15"
+        },
+        "valueQuantity": {
+          "value": 115,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-16",
+        "status": "final",
+        "code": {
+          "text": "Observation 16"
+        },
+        "valueQuantity": {
+          "value": 116,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-17",
+        "status": "final",
+        "code": {
+          "text": "Observation 17"
+        },
+        "valueQuantity": {
+          "value": 117,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-18",
+        "status": "final",
+        "code": {
+          "text": "Observation 18"
+        },
+        "valueQuantity": {
+          "value": 118,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-19",
+        "status": "final",
+        "code": {
+          "text": "Observation 19"
+        },
+        "valueQuantity": {
+          "value": 119,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-20",
+        "status": "final",
+        "code": {
+          "text": "Observation 20"
+        },
+        "valueQuantity": {
+          "value": 120,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-21",
+        "status": "final",
+        "code": {
+          "text": "Observation 21"
+        },
+        "valueQuantity": {
+          "value": 121,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-22",
+        "status": "final",
+        "code": {
+          "text": "Observation 22"
+        },
+        "valueQuantity": {
+          "value": 122,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-23",
+        "status": "final",
+        "code": {
+          "text": "Observation 23"
+        },
+        "valueQuantity": {
+          "value": 123,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-24",
+        "status": "final",
+        "code": {
+          "text": "Observation 24"
+        },
+        "valueQuantity": {
+          "value": 124,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-25",
+        "status": "final",
+        "code": {
+          "text": "Observation 25"
+        },
+        "valueQuantity": {
+          "value": 125,
+          "unit": "units"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medreq-1",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Medication 1"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medreq-2",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Medication 2"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medreq-3",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Medication 3"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medreq-4",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Medication 4"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medreq-5",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Medication 5"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medreq-6",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Medication 6"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medreq-7",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Medication 7"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medreq-8",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "text": "Medication 8"
+        },
+        "subject": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "allergy-1",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "text": "Allergy Intolerance 1"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "allergy-2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "text": "Allergy Intolerance 2"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "immunization-1",
+        "status": "completed",
+        "vaccineCode": {
+          "text": "Vaccine 1"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "immunization-2",
+        "status": "completed",
+        "vaccineCode": {
+          "text": "Vaccine 2"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "immunization-3",
+        "status": "completed",
+        "vaccineCode": {
+          "text": "Vaccine 3"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "immunization-4",
+        "status": "completed",
+        "vaccineCode": {
+          "text": "Vaccine 4"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "immunization-5",
+        "status": "completed",
+        "vaccineCode": {
+          "text": "Vaccine 5"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "immunization-6",
+        "status": "completed",
+        "vaccineCode": {
+          "text": "Vaccine 6"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Coverage",
+        "id": "coverage-1",
+        "status": "active",
+        "subscriberId": "MRN12346",
+        "beneficiary": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Claim",
+        "id": "claim-1",
+        "status": "active",
+        "type": {
+          "text": "Claim 1"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Claim",
+        "id": "claim-2",
+        "status": "active",
+        "type": {
+          "text": "Claim 2"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Claim",
+        "id": "claim-3",
+        "status": "active",
+        "type": {
+          "text": "Claim 3"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Claim",
+        "id": "claim-4",
+        "status": "active",
+        "type": {
+          "text": "Claim 4"
+        },
+        "patient": {
+          "reference": "Patient/jane-smith"
+        }
+      }
+    }
+  ]
+}
